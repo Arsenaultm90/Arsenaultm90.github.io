@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            header {
+                color: #333;
+                background-color: teal;
+                font-size: larger;
+                font-weight: bold;
+                padding: 5px 5px;
+            }
+            .topnav {
+                background-color: #333;
+                overflow: hidden;
+            }
+            .topnav a {
+                float: left;
+                color: rgb(232, 232, 232);
+                text-align: center;
+                padding: 7px 8px;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+        </style>
+		<title>ELEMENTS OF HTML5</title>
+	</head>
+	<body>
+		<header id="topOfPage">ELEMENTS OF HTML5</header>
+        <nav class="topnav">
+            <a href="#aimsOfHTML5">Aim Of HTML5</a>
+            <a href="#inlineHTML">Inline HTML</a>
+            <a href="#semanticHTML">Semantic HTML</a>
+            <a href="#pDiv">p/div Elements</a>
+            <a href="#asidePicture">aside/picture Elements</a>
+            <a href="#figureImage">figure/image Elements</a>
+            <a href="#subSup">sub/sup Elements</a>
+            <a href="#mainSectionArticle">main/section/article Elements</a>
+            <a href="#unorderedOrderedDescription">List Elements</a>
+            <a href="#absoluteRelativeEmail">Anchor Elements</a>
+            <a href="#meterProgress">meter/progress Elements</a>
+            <a href="#dataControl">Control Elements</a>
+        </nav>
+		<main>
+			<!--Three Main Aims of Developing HTML5-->
+			<div id="aimsOfHTML5">
+				<h3>Three Main Aims of Developing HTML5</h3>
+				<ul>
+					<li><b>Rich Multimedia Support:</b> HTML5 aimed to provide better support for multimedia elements like video and audio without needing third-party plugins.</li>
+					<li><b>Enhanced Semantics:</b> HTML5 introduced new semantic elements like header, footer, nav, article, section, and aside.</li>
+					<li><b>Cross-platform Compatibility:</b> HTML5 aimed to provide a standardized platform for web development, reducing the need for browser-specific hacks and workarounds.</li>
+				</ul>
+			</div>
+            <br>
+			<!--Example of Inline HTML-->
+			<div id="inlineHTML">
+				<h3>Example of Inline HTML</h3>
+				<p><span style="color: teal"><b>Span & Bold</b></span> are example of inline elements. They are primarily used for styling on specific word or section of a block level element</p>
+				<p>They are named as 'Inline Elements' because they work on the same line as the block element they are within</p>
+				<br />
+			</div>
+            <br>
+			<!--What is semantic HTML markup-->
+			<div id="semanticHTML">
+				<h3>Semantic HTML and its Importance</h3>
+				<p>Semantic HTML refers to the pratice of using HTML elements to convey the meaning or purpose of the content enclose within the element</p>
+				<p>This is important due to the complexity of website. Lessens the need for comments and reduces the number of generic HTML elements, such as div, in your HTML</p>
+				<br />
+			</div>
+            <br>
+			<!--Examples of <p> and <div>-->
+			<div id="pDiv">
+				<h3>Example of 'p' and 'div' Elements</h3>
+				<p>This sentence is written within a 'p' element. It is generally used to mark paragraphs</p>
+				<div>
+					<p>This sentence is written within a div element. Div is a diverse HTML element that is generally used to seperate specific content on a page creating a 'division'.</p>
+				</div>
+				<br />
+			</div>
+            <br>
+			<!--Examples of <aside> and <picture> elements-->
+			<div id="asidePicture">
+				<h3>Example of 'aside' and 'picture' Elements</h3>
+                <h4>Aside</h4>
+                <p>This section has an example of the 'aside' element. Used within the content block and will generally be indirectly related to the content.</p>
+                <aside>
+                    <h4>HTML Elements (Within aside)</h4>
+                    <p>HTML elements make up the foundation of how the language is build, including this paragraph within an 'aside' element.</p>
+                </aside>
+                <h4>Picture</h4>
+                <p>The 'picture' element allows for multiple image sources. It will match the image to the device screen size and will also match recognizable formats, while ignoring the other source images.</p>
+                <picture>
+                    <sourc srcset="https://picsum.photos/200/300">
+                    <img src="https://picsum.photos/200/300" alt="">
+                </picture>
+				<br />
+			</div>
+            <br>
+            <!--Examples of <figure> and <image> elements-->
+            <div id="figureImage">
+                <h3>Examples Of 'figure' and 'image' Elements</h3>
+                <h4>Figure Element</h4>
+                <p>The figure element is related to the main flow, but its position is independent of the main flow. It specifies self-contained content.</p>
+                <figure>
+                    <img src="https://picsum.photos/500/300" alt="">
+                    <figcaption>Fig 1. Randomly generated image</figcaption>
+                </figure>
+                <h4>Image Element</h4>
+                <p>The image element is used to display images from a decided source. Different styles can be applied, including the size of the image.</p>
+                <img src="https://picsum.photos/400/300" alt="">
+                <br>
+            </div>
+            <br>
+            <!--Examples of <sub> and <sup> elements-->
+            <div id="subSup">
+                <h3>Examples Of 'sub' and 'sup' Elements</h3>
+                <h4>Sub Element</h4>
+                <p>Changes the text wrapped in the 'sub' element to <sub>subscript</sub> format</p>
+                <h4>Sup Element</h4>
+                <p>Changes the text wrapped in the 'sup' element to <sup>superscript</sup> format</p>
+                <br>
+            </div>
+            <br>
+            <!--Examples of <main>, <section>, and <article> elements-->
+            <div id="mainSectionArticle">
+                <h3>Examples Of 'main', 'section', and 'article' Elements</h3>
+                <h4>Main Element</h4>
+                <p>The 'main' element represents the main content of a body element. All the content on this webpage is within the 'main' element.</p>
+                <h4>Section Element</h4>
+                <section>
+                    <p>The 'section' tag is simply used to define any section(block) within a webpage. It can be used to define specific elements to that entire section as well.</p>
+                </section>
+                <h4>Article Element</h4>
+                <article>
+                    <p>Generally used to define independent, self-contained content. Examples of this are blog posts, forum posts, etc.</p>
+                </article>
+                <br>
+            </div>
+            <br>
+            <!--Examples of different list elements (Unordered, Ordered, Description)-->
+            <div id="unorderedOrderedDescription">
+                <h3>Example Of Different List Elements(Unordered, Ordered, Description)</h3>
+                <h4>Unordered List Element</h4>
+                <p>Will list items with bullet points.</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+                <h4>Ordered List Element</h4>
+                <p>Will list items with increment numbers.</p>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+                <h4>Description</h4>
+                <p>Used to attributed descriptions to a related item.</p>
+                <dl>
+                    <dt><b>Soft</b></dt>
+                    <dt><b>Shiny</b></dt>
+                    <dd>Silk</dd>
+                </dl>
+                <br>
+            </div>
+            <br>
+            <!--Examples of different anchor elements (Absolute, Relative, Email Hyperlinks)-->
+            <div id="absoluteRelativeEmail">
+                <h3>Examples Of Different Anchor Elements (Absolute, Relative, and Email Hyperlink)</h3>
+                <h4>Absolute Anchor Element</h4>
+                <p>Links the text to an absolute web address.</p>
+                <a href="https://picsum.photos/" target="_blank">Absolute Link</a>
+                <h4>Relative Anchor Element</h4>
+                <p>Links the text to a location relative to its location. The link below will bring the user back to the top of the page.</p>
+                <a href="#topOfPage">Relative Link</a>
+                <h4>Email Hyperlink Anchor Element</h4>
+                <p>Links the text to an email address.</p>
+                <a href="mailto:arse0165@algonquinlive.com">Send email</a>             
+            </div>
+            <br>
+            <!--Examples of Meter and Progress Elements-->
+            <div id="meterProgress">
+                <h3>Examples Of Meter and Progress Elements</h3>
+                <h4>Meter Element</h4>
+                <p>Creates a visual meter with a defined range and set value. Used to represent a set/calculated value.</p>
+                <label for="bananas_eaten">Bananas Eaten:</label>
+                <meter id="bananas_eaten" value="0.5"></meter>
+                <span>50%</span>
+                <h4>Progress Element</h4>
+                <p>Similar to the 'meter' element, it will display a bar with a set range of values. Used to display the progress of a task.</p>
+                <label for="download_progress">Download Progress: </label>
+                <progress id="download_progress" value="75" max="100"></progress>
+                <span>75%</span>
+                <br>
+            </div>
+            <br>
+            <!--Examples of Data List Control, Slider Control, and Calender Control-->
+            <div id="dataControl">
+                <h3>Examples Of Data List Control, Slider Control, and Calender Control</h3>
+                <h4>Data List Control</h4>
+                <p>Gives the user a predefined list of options.</p>
+                <form action="" method="get">
+                    <label for="browser">Choose your fruit from the list:</label>
+                    <input list="browsers" name="fruit" id="fruit">
+                    <datalist id="browsers">
+                      <option value="Banana">
+                      <option value="Strawberry">
+                      <option value="Cherry">
+                      <option value="Mango">
+                      <option value="Pineapple">
+                    </datalist>
+                    <input type="submit">
+                  </form>
+                <h4>Slider Control</h4>
+                <p>Creates a slider with custom values</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                <h4>Calender Control</h4>
+                <p>Allows you to define date parameter for the user.</p>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+                <br>
+            </div>
+            <br>
+		</main>
+        <footer>Copyright 2024 Matt Arsenault</footer>
+	</body>
+</html>
